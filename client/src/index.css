@@ -1,38 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-*{
-  font-family: 'Montserrat', sans-serif !important;
+* {
+  font-family: "Montserrat", sans-serif !important;
 }
 
-/* antd override */
-input{
+/* Antd Override */
+input {
   border-radius: 2px !important;
-  border: 1px solid rgba(128, 128, 128, 0.521) !important;
+  border: 1px solid rgb(211, 199, 199) !important;
   height: 40px !important;
 }
-input:focus , .ant-picker{
+input:focus , .ant-picker {
   outline: none !important;
-  box-shadow: none !important;
   border: 1px solid gray !important;
 }
-label{
+label {
   font-size: 16px !important;
   color: black !important;
 }
-.ant-form-item{
-  margin: 10px 0 !important;; 
+.ant-form-item {
+  margin: 10px 0 !important;
 }
 .ant-picker-input input{
   border: none !important;
 }
 .ant-picker{
   border-radius: 2px !important;
-  border: 1px solid rgba(128, 128, 128, 0.521) !important;
+  border: 1px solid rgb(211, 199, 199) !important;
   height: 40px !important;
 }
-/* Common styling */
+/*Common Styling*/
 
-.spinner-parent{
+.spinner-parent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,82 +44,81 @@ label{
   z-index: 9999;
 }
 .spinner-border{
-  width: 5rem;
-  height: 5rem;
+  width: 4rem;
+  height: 4rem;
   color: white !important;
 }
-
 .page-title{
   font-size: 25px;
-  color: rgba(0, 0, 0, 0.833);
+  color: black;
   font-weight: bold;
 }
-.card-title{
-  font-size: 22px;
+.card-title {
+  font-size: 1.5rem;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.627);
-
 }
-.normal-text{
+.normal-text {
   font-size: 1rem;
 }
-.card{
-  box-shadow: 0 0 2px rgb(189, 188, 188);
+.card {
+  box-shadow: 0 0 2px gray;
   border-radius: 0 !important;
 }
-.primary-button{
-  background-color: #005555 !important;
-  border-color: #005555 !important;
+.primary-btn {
+  background-color: #2b6f8a !important;
+  border-color: rgb(23, 83, 63) !important;
   height: 40px !important;
   width: 100% !important;
   color: white !important;
-  font-size: 16px !important;
+  font-size: 18px !important;
   width: max-content !important;
 }
 .full-width-button{
   width: 100% !important;
 }
 p{
-  color: rgba(0, 0, 0, 0.673) !important;
-  padding: 0 !important;
-  margin: 0 !important;
+  color: rgba(0, 0, 0, 0.603) !important;
+  margin:  0 !important;
+  padding:  0 !important;
 }
-
-.anchor{
+.anchor {
   color: black !important;
-  text-decoration: underline;
-  cursor: pointer;
-  font-size: 16px !important;
-}
-.anchor:hover{
   text-decoration: underline !important;
+  font-size: 16px !important;
+  cursor: pointer;
 }
 
 .cursor-pointer{
-  cursor: pointer;
+ cursor: pointer; 
 }
 
 
-/* authentication pages */
-
-.authentication{
-   height: 100vh;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   background-color: #005555;
+/*Authentication Pages*/
+.authentication-container {
+  /* height: 100vh;
+  align-items: center;
+  justify-content: left; */
+  /* background-color: rgba(29, 112, 84, 0.774); */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
 }
-.authentication-form{
-  width: 400px;
-}
-
-.authentication .card-title{
-  font-size: 1.5rem;
+.design-card-title{
   font-weight: bold;
-  background-color: orangered;
-  color: white !important;
+  background-color: rgb(187, 83, 42);
+  color: aliceblue;
   max-width: max-content !important;
   padding: 7px 15px;
-  margin-left: -40px;
+  margin-left: -50px;
   border-bottom-left-radius: 10px;
+}
+
+
+.authentication-form {
+  width: 65%;
+  margin: 100px;
+}
+
+img {
+  margin-top: 60px;
 }
